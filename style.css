@@ -6,6 +6,11 @@ body {
   background: #ffffff;
 }
 
+img {
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
 h1 {
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
