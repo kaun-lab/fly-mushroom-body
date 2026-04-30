@@ -1,17 +1,129 @@
+/* ===== Base Layout ===== */
 body {
   font-family: system-ui, sans-serif;
   max-width: 900px;
   margin: auto;
   padding: 40px;
   background: #ffffff;
+  color: #222;
+  perspective: 1000px; /* enables subtle 3D effects */
 }
 
-img {
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
+/* ===== Headings ===== */
 h1 {
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
+  color: #2b4c7e;
+}
+
+/* ===== Images ===== */
+img {
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+/* ===== Links (accessibility improved) ===== */
+a {
+  color: #1a0dab;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+/* ===== Tables (for your Markdown-rendered study list) ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: top;
+}
+
+th {
+  background: #f2f5fa;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+tr:hover {
+  background: #f1f6ff;
+}
+
+/* ===== Simple Card (used in 3D toggle demo) ===== */
+.card {
+  width: 250px;
+  padding: 20px;
+  margin-top: 30px;
+  background: white;
+  border-radius: 10px;
+  transform: rotateX(10deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+/* ===== 3D Toggle Switch ===== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 20px 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  transform-style: preserve-3d;
+}
+
+/* knob */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  transform: translateZ(10px);
+}
+
+/* toggle ON state */
+.switch input:checked + .slider {
+  background-color: #2b4c7e;
+  transform: rotateY(15deg);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(26px) translateZ(10px);
+}
+
+/* lift card when toggle is ON */
+.switch input:checked ~ .card {
+  transform: rotateX(0deg) rotateY(10deg);
 }
