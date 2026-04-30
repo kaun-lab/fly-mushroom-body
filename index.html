@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Mushroom Body Project</title>
 
   <link rel="stylesheet" href="style.css">
-  
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       line-height: 1.6;
       background-color: #f7f9fc;
@@ -19,17 +20,65 @@
       color: #2b4c7e;
     }
 
-    p {
-      font-size: 16px;
+    img {
+      margin: 20px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #eef2f7;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    a {
+      color: #1a0dab;
     }
   </style>
+
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+
   <h1>Fly Mushroom Body Atlas</h1>
 
   <p>Open-access resource for spatial transcriptomics and multi-omic analysis.</p>
 
-  <img src="fly_cartoon.png" alt="Fly" width="300">
+  <img src="fly_cartoon.png" alt="Fly cartoon" width="250">
+
+  <h2>Key Transcriptomic Studies</h2>
+
+  <!-- This is where your .md file will appear -->
+  <div id="md-content">Loading studies...</div>
+
+  <script>
+    fetch("bulk_singlecell_studies.md")
+      .then(response => response.text())
+      .then(md => {
+        document.getElementById("md-content").innerHTML = marked.parse(md);
+      })
+      .catch(err => {
+        document.getElementById("md-content").innerHTML =
+          "Error loading markdown file.";
+      });
+  </script>
+
 </body>
 </html>
