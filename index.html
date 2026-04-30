@@ -4,52 +4,8 @@
   <meta charset="UTF-8">
   <title>Mushroom Body Project</title>
 
+  <!-- External CSS (use this as your main styling file) -->
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      background-color: #f7f9fc;
-      color: #222;
-    }
-
-    h1 {
-      color: #2b4c7e;
-    }
-
-    img {
-      margin: 20px 0;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      font-size: 14px;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      vertical-align: top;
-    }
-
-    th {
-      background-color: #eef2f7;
-      text-align: left;
-    }
-
-    tr:nth-child(even) {
-      background-color: #fafafa;
-    }
-
-    a {
-      color: #1a0dab;
-    }
-  </style>
 
   <!-- Markdown parser -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -57,15 +13,18 @@
 
 <body>
 
+  <!-- ===== HEADER ===== -->
   <h1>Fly Mushroom Body Atlas</h1>
 
-  <p>Open-access resource for spatial transcriptomics and multi-omic analysis.</p>
+  <p>
+    Open-access resource for spatial transcriptomics and multi-omic analysis.
+  </p>
 
   <img src="fly_cartoon.png" alt="Fly cartoon" width="250">
 
-  <h2>Bulk and single-cell RNA-seq fly brain marker resources</h2>
+  <!-- ===== STUDIES SECTION ===== -->
+  <h2>Bulk and Single-cell RNA-seq Fly Brain Resources</h2>
 
-  <!-- This is where your .md file will appear -->
   <div id="md-content">Loading studies...</div>
 
   <script>
@@ -80,15 +39,20 @@
       });
   </script>
 
+  <!-- ===== 3D TOGGLE SECTION ===== -->
   <h2>3D Toggle Example</h2>
 
   <label class="switch">
-  <input type="checkbox">
-  <span class="slider"></span>
+
+    <input type="checkbox">
+
+    <span class="slider"></span>
+
+    <div class="card">
+      Mushroom Body Atlas View
+    </div>
+
   </label>
-  <div class="card">
-  Mushroom Body Atlas
-  </div>
 
 </body>
 </html>
