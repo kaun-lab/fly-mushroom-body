@@ -72,7 +72,13 @@
     allowfullscreen
     allow="autoplay; fullscreen">
   </iframe>
-``</div>
+  </div>
+
+  <h2>3D UMAP Viewer</h2>
+
+<button onclick="toggleSpin()">Toggle Rotation</button>
+
+<canvas id="umapCanvas" style="width:100%; height:500px; display:block; margin-top:10px;"></canvas>
   
   <h2>Bulk and single-cell RNA-seq fly brain marker resources</h2>
 
@@ -90,6 +96,48 @@
           "Error loading markdown file.";
       });
   </script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
+<script>
+let scene = new THREE.Scene();
+let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+let renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("umapCanvas"), alpha: true });
+
+renderer.setSize(window.innerWidth * 0.9, 500);
+
+// fake UMAP points
+for (let i = 0; i < 300; i++) {
+  let x = (Math.random() - 0.5) * 6;
+  let y = (Math.random() - 0.5) * 6;
+  let z = (Math.random() - 0.5) * 6;
+
+  let geometry = new THREE.SphereGeometry(0.05, 8, 8);
+  let material = new THREE.MeshBasicMaterial({ color: 0x2b4c7e });
+  let dot = new THREE.Mesh(geometry, material);
+
+  dot.position.set(x, y, z);
+  scene.add(dot);
+}
+
+camera.position.z = 8;
+
+let spinning = true;
+
+function toggleSpin() {
+  spinning = !spinning;
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  if (spinning) {
+    scene.rotation.y += 0.003;
+  }
+
+  renderer.render(scene, camera);
+}
+
+animate();
+</script>
 </body>
 </html>
