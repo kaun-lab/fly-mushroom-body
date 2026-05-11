@@ -49,6 +49,21 @@
     a {
       color: #1a0dab;
     }
+
+    #fly {
+  position: fixed;
+  width: 80px;
+  z-index: 9999;
+  animation: flyAround 18s linear infinite;
+}
+
+@keyframes flyAround {
+  0%   { top: 10%; left: -100px; }
+  25%  { top: 20%; left: 30%; }
+  50%  { top: 70%; left: 60%; }
+  75%  { top: 30%; left: 90%; }
+  100% { top: 10%; left: -100px; }
+}
   </style>
 
   <!-- Markdown parser -->
@@ -56,6 +71,7 @@
 </head>
 
 <body>
+  <img id="fly" src="fly_cartoon.png">
 
   <h1>Fly Mushroom Body Atlas</h1>
 
@@ -73,8 +89,6 @@
     “Future avenues in Drosophila mushroom body research,” Cold Spring Harbor Laboratory Press.
   </figcaption>
 </figure>
-  
-  <img src="fly_cartoon.png" alt="Fly cartoon" width="250">
 
   <h2>Prezi embedding: Drosophila Concept Map</h2>
 
