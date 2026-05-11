@@ -7,6 +7,25 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
+    .navbar {
+  position: sticky;
+  top: 0;
+  background-color: #2b4c7e;
+  padding: 12px;
+  z-index: 10000;
+  border-radius: 8px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffd166;
+}
     body {
       font-family: Arial, sans-serif;
       max-width: 900px;
@@ -71,9 +90,16 @@
 </head>
 
 <body>
+  <nav class="navbar">
+  <a href="#overview">Overview</a>
+  <a href="#brain">3D Brain</a>
+  <a href="#umap">UMAP</a>
+  <a href="#resources">Resources</a>
+</nav>
+  
   <img id="fly" src="fly_cartoon.png">
 
-  <h1>Fly Mushroom Body Atlas</h1>
+<h1 id="overview">Fly Mushroom Body Atlas</h1>
 
   <p>Open-access resource for spatial transcriptomics and multi-omic analysis.</p>
 
@@ -100,7 +126,7 @@
     allow="autoplay; fullscreen">
   </iframe>
   </div>
-<h2>Drosophila Brain 3D Model</h2>
+<h2 id="brain">Drosophila Brain 3D Model</h2>
 
 <div class="sketchfab-embed-wrapper">
   <iframe 
@@ -119,7 +145,7 @@
   </iframe>
 </div>
   
-  <h2>3D UMAP Viewer</h2>
+<h2 id="umap">3D UMAP Viewer</h2>
 
 <iframe 
   src="mergedNEW_sobj_3D_UMAP_dataset.html"
@@ -139,7 +165,7 @@
 
 <canvas id="umapCanvas" style="width:100%; height:500px; display:block; margin-top:10px;"></canvas>
   
-  <h2>Bulk and single-cell RNA-seq fly brain marker resources</h2>
+ <h2 id="resources">Bulk and single-cell RNA-seq fly brain marker resources</h2>
 
   <!-- This is where your .md file will appear -->
   <div id="md-content">Loading studies...</div>
