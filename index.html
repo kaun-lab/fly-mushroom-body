@@ -16,14 +16,17 @@
   border-radius: 8px;
 }
 
-.navbar a {
+.navbar button {
+  background: none;
+  border: none;
   color: white;
-  text-decoration: none;
   margin-right: 20px;
   font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.navbar a:hover {
+.navbar button:hover {
   color: #ffd166;
 }
     body {
@@ -89,18 +92,30 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
+  <script>
+function showTab(tabId) {
+  let tabs = document.getElementsByClassName("tabcontent");
+
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = "none";
+  }
+
+  document.getElementById(tabId).style.display = "block";
+}
+</script>
 <body>
-  <nav class="navbar">
-  <a href="#overview">Overview</a>
-  <a href="#brain">3D Brain</a>
-  <a href="#umap">UMAP</a>
-  <a href="#resources">Resources</a>
+ <nav class="navbar">
+  <button onclick="showTab('overview')">Overview</button>
+  <button onclick="showTab('brain')">3D Brain</button>
+  <button onclick="showTab('umap')">UMAP</button>
+  <button onclick="showTab('resources')">Resources</button>
 </nav>
+
+  
   
   <img id="fly" src="fly_cartoon.png">
-
-<h1 id="overview">Fly Mushroom Body Atlas</h1>
-
+<div id="overview" class="tabcontent">
+  <h1>Fly Mushroom Body Atlas</h1>
   <p>Open-access resource for spatial transcriptomics and multi-omic analysis.</p>
 
   <figure>
@@ -126,9 +141,12 @@
     allow="autoplay; fullscreen">
   </iframe>
   </div>
-<h2 id="brain">Drosophila Brain 3D Model</h2>
+  </div>
 
-<div class="sketchfab-embed-wrapper">
+<div id="brain" class="tabcontent" style="display:none;">
+  <h2>Drosophila Brain 3D Model</h2>
+
+  <div class="sketchfab-embed-wrapper">
   <iframe 
     title="3D MODEL DROSOPHILA BRAIN"
     frameborder="0"
@@ -143,9 +161,12 @@
     src="https://sketchfab.com/models/8706cbed8d0f4c64bfabef61bf682054/embed"
     style="width:100%; height:600px;">
   </iframe>
+  </div>
 </div>
   
-<h2 id="umap">3D UMAP Viewer</h2>
+  <div id="umap" class="tabcontent" style="display:none;">
+  <h2>3D UMAP Viewer</h2>
+
 
 <iframe 
   src="mergedNEW_sobj_3D_UMAP_dataset.html"
@@ -153,6 +174,8 @@
   height="700px"
   style="border:none; margin-top:10px;">
   </iframe>
+
+    </div>
   
   <img 
   src="dotplot_merged_mb.png"
@@ -165,9 +188,11 @@
 
 <canvas id="umapCanvas" style="width:100%; height:500px; display:block; margin-top:10px;"></canvas>
   
- <h2 id="resources">Bulk and single-cell RNA-seq fly brain marker resources</h2>
+  </div>
+  <div id="resources" class="tabcontent" style="display:none;">
+  <h2>Bulk and single-cell RNA-seq fly brain marker resources</h2>
 
-  <!-- This is where your .md file will appear -->
+
   <div id="md-content">Loading studies...</div>
 
   <script>
@@ -181,6 +206,7 @@
           "Error loading markdown file.";
       });
   </script>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
 <script>
