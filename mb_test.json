@@ -1,0 +1,1422 @@
+{
+  "title": "3D viewer | fafb",
+  "dimensions": {
+    "x": [
+      4e-9,
+      "m"
+    ],
+    "y": [
+      4e-9,
+      "m"
+    ],
+    "z": [
+      4e-8,
+      "m"
+    ]
+  },
+  "position": [
+    132000,
+    55390,
+    512
+  ],
+  "crossSectionScale": 10.25,
+  "projectionOrientation": [
+    -0.4035221040248871,
+    -0.01901117153465748,
+    -0.053773146122694016,
+    0.9131905436515808
+  ],
+  "projectionScale": 103553.39059327375,
+  "layers": [
+    {
+      "type": "segmentation",
+      "source": "precomputed://gs://flywire_neuropil_meshes/whole_neuropil/brain_mesh_v3",
+      "tab": "source",
+      "objectAlpha": 0.05,
+      "segments": [
+        "1"
+      ],
+      "segmentColors": {
+        "1": "#b5b5b5"
+      },
+      "name": ". Brain"
+    },
+    {
+      "type": "segmentation",
+      "source": "precomputed://gs://flywire_v141_m783",
+      "tab": "segments",
+      "segments": [
+        "720575940613583001",
+        "720575940621948554",
+        "720575940621997921",
+        "720575940624547622"
+      ],
+      "name": ". Cells (4)"
+    },
+    {
+      "type": "annotation",
+      "source": {
+        "url": "local://annotations",
+        "transform": {
+          "outputDimensions": {
+            "x": [
+              4e-9,
+              "m"
+            ],
+            "y": [
+              4e-9,
+              "m"
+            ],
+            "z": [
+              4e-8,
+              "m"
+            ]
+          }
+        }
+      },
+      "tab": "source",
+      "annotations": [
+        {
+          "point": [
+            106748,
+            43192,
+            3701
+          ],
+          "type": "point",
+          "id": "a2800cf259fef62c145d3828f1898acb619835c1"
+        },
+        {
+          "point": [
+            115952,
+            43168,
+            1748
+          ],
+          "type": "point",
+          "id": "ab52b93494aaf060bc4b1ed3ed725565feba023a"
+        },
+        {
+          "point": [
+            106916,
+            41520,
+            4034
+          ],
+          "type": "point",
+          "id": "fb38810470cb30651adcc221a50351be78bebdda"
+        },
+        {
+          "point": [
+            106272,
+            43212,
+            2546
+          ],
+          "type": "point",
+          "id": "a4fb1542aed0bfc8616e4ee3f3ad5913d77f9786"
+        },
+        {
+          "point": [
+            108576,
+            42036,
+            4200
+          ],
+          "type": "point",
+          "id": "1417e6373a755c37fa311d0f93ec6f8be64fd36b"
+        },
+        {
+          "point": [
+            118204,
+            43332,
+            1551
+          ],
+          "type": "point",
+          "id": "b144c668f8580ad4222aba37c07ab0672551d33d"
+        },
+        {
+          "point": [
+            108528,
+            41584,
+            4340
+          ],
+          "type": "point",
+          "id": "cb07933596615c716a487f1cddd24877d4554c87"
+        },
+        {
+          "point": [
+            109940,
+            41196,
+            2057
+          ],
+          "type": "point",
+          "id": "f22d777f5fa50f8ef71938842d1134a0fe5b2a50"
+        },
+        {
+          "point": [
+            113524,
+            43220,
+            1758
+          ],
+          "type": "point",
+          "id": "5edc35d993808a3e9059c5390fe442d8b4c7d9fd"
+        },
+        {
+          "point": [
+            112036,
+            43228,
+            1538
+          ],
+          "type": "point",
+          "id": "d6076b5e8fd8b7fad142016297f729717905fabf"
+        },
+        {
+          "point": [
+            107808,
+            41472,
+            1945
+          ],
+          "type": "point",
+          "id": "231cee9a34964c90251b1a57a6c96c7f1824ec9f"
+        },
+        {
+          "point": [
+            109896,
+            41276,
+            2043
+          ],
+          "type": "point",
+          "id": "90d7af9e3e951e06031febcf34db1f33a57913ce"
+        },
+        {
+          "point": [
+            106100,
+            42772,
+            2987
+          ],
+          "type": "point",
+          "id": "f205795f7b4eb606e56d8d3c9cf4d64dc7a978f5"
+        },
+        {
+          "point": [
+            109615,
+            41541,
+            1988
+          ],
+          "type": "point",
+          "id": "4e528da96f87f254cf668749be1be5dbd57d2956"
+        },
+        {
+          "point": [
+            109664,
+            41464,
+            1992
+          ],
+          "type": "point",
+          "id": "de47c027e43684764a2aa281cc9b03626cf8865f"
+        },
+        {
+          "point": [
+            110004,
+            42028,
+            1918
+          ],
+          "type": "point",
+          "id": "8adae078c635d23f7040934aba5e4e0f4712f1ef"
+        },
+        {
+          "point": [
+            106048,
+            43040,
+            2698
+          ],
+          "type": "point",
+          "id": "c17b919da7dd21152e2cbfcb69f82a044a2c739a"
+        },
+        {
+          "point": [
+            118452,
+            43260,
+            1552
+          ],
+          "type": "point",
+          "id": "6877ca9e65b08b10ee45fc6a7110688125f110da"
+        },
+        {
+          "point": [
+            110068,
+            42164,
+            1884
+          ],
+          "type": "point",
+          "id": "c4b916b9478216444f684db8edcf672172558edc"
+        },
+        {
+          "point": [
+            107968,
+            30792,
+            4446
+          ],
+          "type": "point",
+          "id": "17139452ec59fc9087c6d048008650c4ff0681c2"
+        },
+        {
+          "point": [
+            110828,
+            41676,
+            2091
+          ],
+          "type": "point",
+          "id": "941a02370e240c0a065f06863cb6608ddd2eb88a"
+        },
+        {
+          "point": [
+            108068,
+            41076,
+            4331
+          ],
+          "type": "point",
+          "id": "440204c825dcad8f2875d95f5e8126283d9259ed"
+        },
+        {
+          "point": [
+            112972,
+            28792,
+            2248
+          ],
+          "type": "point",
+          "id": "47a45de3c3b8472a783fb6ecda5426184b452066"
+        },
+        {
+          "point": [
+            107100,
+            43176,
+            3614
+          ],
+          "type": "point",
+          "id": "4a5588bc8369aab205dca9073fc8b58ac74bfac0"
+        },
+        {
+          "point": [
+            116752,
+            43240,
+            1733
+          ],
+          "type": "point",
+          "id": "7855f1b8e389b52d9a9c7e70274713cb7d2a2e88"
+        },
+        {
+          "point": [
+            107040,
+            32680,
+            4376
+          ],
+          "type": "point",
+          "id": "db5e5cca4ee51be38a588a076ba5f38da1fae019"
+        },
+        {
+          "point": [
+            110212,
+            41580,
+            2045
+          ],
+          "type": "point",
+          "id": "da429cf8ffeaed8a5736cd1ea30ddeaf797c61d1"
+        },
+        {
+          "point": [
+            108600,
+            42100,
+            4219
+          ],
+          "type": "point",
+          "id": "e32c808661af6d5a338a59df6676001f1761c05d"
+        },
+        {
+          "point": [
+            123772,
+            45496,
+            2005
+          ],
+          "type": "point",
+          "id": "0a208c9c2a10547f679942db6f3f2e29c9858ea5"
+        },
+        {
+          "point": [
+            114712,
+            43088,
+            1727
+          ],
+          "type": "point",
+          "id": "894c171a393ec0f9dde5945d5a91a87f652343f3"
+        },
+        {
+          "point": [
+            112652,
+            28664,
+            2112
+          ],
+          "type": "point",
+          "id": "a356b4f9f04d8e41e13e0bc4458b4d29c13d901f"
+        },
+        {
+          "point": [
+            108736,
+            41088,
+            2031
+          ],
+          "type": "point",
+          "id": "07e83783c0ebb19b640d47975bb486ac2b48806f"
+        },
+        {
+          "point": [
+            116558,
+            43220,
+            1732
+          ],
+          "type": "point",
+          "id": "e2dabd2a2b972902b77ac1e351e79775c2e321b2"
+        },
+        {
+          "point": [
+            124732,
+            44996,
+            1826
+          ],
+          "type": "point",
+          "id": "203abb771bac24eca5ad37882fe1c82e40a6ccfe"
+        },
+        {
+          "point": [
+            122224,
+            44960,
+            1888
+          ],
+          "type": "point",
+          "id": "e101db751a9351a4ae9bce24b9904f3f377f6b04"
+        },
+        {
+          "point": [
+            113004,
+            29000,
+            2245
+          ],
+          "type": "point",
+          "id": "6acb9959ffac08ccebbef3c95e45a605c9874a54"
+        },
+        {
+          "point": [
+            106468,
+            43184,
+            3702
+          ],
+          "type": "point",
+          "id": "ea32cc5195820233db6f3a7a122075d30f91007b"
+        },
+        {
+          "point": [
+            107032,
+            41464,
+            4060
+          ],
+          "type": "point",
+          "id": "edf6db4babce18683e6e7cc9f9667e51d7b4a896"
+        },
+        {
+          "point": [
+            108476,
+            41340,
+            4377
+          ],
+          "type": "point",
+          "id": "9da687c247985cc376842a9f51f4705723395ec7"
+        },
+        {
+          "point": [
+            110892,
+            42320,
+            1989
+          ],
+          "type": "point",
+          "id": "6be9a97c8d2828d1b322655a5a35f76b5027200e"
+        },
+        {
+          "point": [
+            108128,
+            42368,
+            1959
+          ],
+          "type": "point",
+          "id": "8d71cf1c43463b0193e31b37e9e8acca8a697e6e"
+        },
+        {
+          "point": [
+            108304,
+            40932,
+            2090
+          ],
+          "type": "point",
+          "id": "28a27dad24e90c5cf6bd1a3035561d51ad8b12c5"
+        },
+        {
+          "point": [
+            106760,
+            43004,
+            3268
+          ],
+          "type": "point",
+          "id": "a692382ef9095348f1b210f561bf393c342d951c"
+        },
+        {
+          "point": [
+            108600,
+            41636,
+            4289
+          ],
+          "type": "point",
+          "id": "5340f9f8e23ada367412178b2637904650bd9d54"
+        },
+        {
+          "point": [
+            111887,
+            43234,
+            1549
+          ],
+          "type": "point",
+          "id": "683faf1d068c27b7799a59ba5a5a70940ee6012c"
+        },
+        {
+          "point": [
+            108104,
+            43324,
+            3923
+          ],
+          "type": "point",
+          "id": "524406724fa11c5a55dd17b7b8d6d858a6686699"
+        },
+        {
+          "point": [
+            112756,
+            42876,
+            1603
+          ],
+          "type": "point",
+          "id": "6bc10a4a7499a403affeac26e4cfdf78139ed19f"
+        },
+        {
+          "point": [
+            114312,
+            43256,
+            1745
+          ],
+          "type": "point",
+          "id": "36bbb07bfb25dccc0be291aebbeaaf8c863baaa6"
+        },
+        {
+          "point": [
+            118396,
+            43052,
+            1601
+          ],
+          "type": "point",
+          "id": "a5013045bfef7dd3622dc203938e34ad3b5cf736"
+        },
+        {
+          "point": [
+            111464,
+            42048,
+            2049
+          ],
+          "type": "point",
+          "id": "e1a106be6af33675ab309982e09635b78508dac3"
+        },
+        {
+          "point": [
+            112712,
+            31256,
+            2185
+          ],
+          "type": "point",
+          "id": "c13205dc3668cab15363dcd8b21e780b4aac3788"
+        },
+        {
+          "point": [
+            106908,
+            43692,
+            3801
+          ],
+          "type": "point",
+          "id": "73082f59161f01227a6ea77bd9f046d3971abe53"
+        },
+        {
+          "point": [
+            109732,
+            41352,
+            2052
+          ],
+          "type": "point",
+          "id": "64fa2d5c072eb5555cdbfa681ea7491a266d2ab0"
+        },
+        {
+          "point": [
+            123060,
+            44628,
+            1974
+          ],
+          "type": "point",
+          "id": "974d32edbce3021a61fb0c901dc8d3141e2c2de2"
+        },
+        {
+          "point": [
+            107808,
+            41444,
+            1946
+          ],
+          "type": "point",
+          "id": "cfca88332882a3d8875ee20f65e524b3e85ffe76"
+        },
+        {
+          "point": [
+            111496,
+            41572,
+            2172
+          ],
+          "type": "point",
+          "id": "ca811e0f4fee32136a4bc7808b9bd1e47636a1f4"
+        },
+        {
+          "point": [
+            111396,
+            41912,
+            2047
+          ],
+          "type": "point",
+          "id": "f8d4e629983488188a72d446c19ffd5d959224c3"
+        },
+        {
+          "point": [
+            108724,
+            30788,
+            4604
+          ],
+          "type": "point",
+          "id": "3e16d11a471e2fea655bf87eff5d85f500823e77"
+        },
+        {
+          "point": [
+            113340,
+            32576,
+            4808
+          ],
+          "type": "point",
+          "id": "c835420faa41a71129450dc04ad7ac059e75d61b"
+        },
+        {
+          "point": [
+            106812,
+            44240,
+            2601
+          ],
+          "type": "point",
+          "id": "6661467faee5469e7d6cec083195917cc9d789c9"
+        },
+        {
+          "point": [
+            110204,
+            42532,
+            1732
+          ],
+          "type": "point",
+          "id": "6e8a7f6f71c84ef910bfa9434169abcc41e515e7"
+        },
+        {
+          "point": [
+            124428,
+            45188,
+            1836
+          ],
+          "type": "point",
+          "id": "1231bccffead473a4018d277ff084e94adc63d3c"
+        },
+        {
+          "point": [
+            107828,
+            43628,
+            3761
+          ],
+          "type": "point",
+          "id": "508361702b78872595fde41bfe0c038b7dee28a7"
+        },
+        {
+          "point": [
+            106228,
+            43676,
+            2597
+          ],
+          "type": "point",
+          "id": "a580d6665cb113b8656667b9fbfc6d13b297cbd3"
+        },
+        {
+          "point": [
+            105820,
+            42880,
+            2627
+          ],
+          "type": "point",
+          "id": "4d2688cd7ab6595445a93c8e0c975733c6eef529"
+        },
+        {
+          "point": [
+            122408,
+            45036,
+            1889
+          ],
+          "type": "point",
+          "id": "f788251462863098b376ddf112214b619dbc95d8"
+        },
+        {
+          "point": [
+            108040,
+            41296,
+            2001
+          ],
+          "type": "point",
+          "id": "8462126c8182eebfb881500abfa018b2149a4d5f"
+        },
+        {
+          "point": [
+            107516,
+            30108,
+            4250
+          ],
+          "type": "point",
+          "id": "a743313784b36730ad30b4e3229edd85fc695d65"
+        },
+        {
+          "point": [
+            122504,
+            44640,
+            1862
+          ],
+          "type": "point",
+          "id": "a5518fa63118ee3e58e81bec4193e4781abc0b1a"
+        },
+        {
+          "point": [
+            106408,
+            42512,
+            3253
+          ],
+          "type": "point",
+          "id": "c34a076d4e70ac3a0e8685803bdf94199bd1a443"
+        },
+        {
+          "point": [
+            115412,
+            43420,
+            1686
+          ],
+          "type": "point",
+          "id": "9cc15e03e75e65bd8e530a0e589c90f920db41c7"
+        },
+        {
+          "point": [
+            119772,
+            43320,
+            1587
+          ],
+          "type": "point",
+          "id": "8746e165ec1a534b61d915e3fe8cc11b25a88296"
+        },
+        {
+          "point": [
+            122228,
+            45752,
+            1891
+          ],
+          "type": "point",
+          "id": "dc59c60b65130952b884c9484b9b040cdeeda116"
+        },
+        {
+          "point": [
+            106396,
+            42084,
+            3919
+          ],
+          "type": "point",
+          "id": "efb59df23b034a0183e8daa31a824f7386a8d3ff"
+        },
+        {
+          "point": [
+            105956,
+            42712,
+            2973
+          ],
+          "type": "point",
+          "id": "105051fd6c09eea1c492d2c1316d464d107796a5"
+        },
+        {
+          "point": [
+            122512,
+            45372,
+            1871
+          ],
+          "type": "point",
+          "id": "ce4b4c32c0450d22161946bcbe6942eefa66245c"
+        },
+        {
+          "point": [
+            115492,
+            43492,
+            1711
+          ],
+          "type": "point",
+          "id": "2a456f9e4735c479876daf023ca06080e4a2c721"
+        },
+        {
+          "point": [
+            109532,
+            30976,
+            4553
+          ],
+          "type": "point",
+          "id": "2f98f0d80d057e3ff859c68eebb0302daeaab5db"
+        },
+        {
+          "point": [
+            106000,
+            42772,
+            2579
+          ],
+          "type": "point",
+          "id": "bcf064ab46e38c0d3b344d6cab11ee9070fc2b6a"
+        },
+        {
+          "point": [
+            109888,
+            41292,
+            2044
+          ],
+          "type": "point",
+          "id": "1f1c61f45b1c375250c2d9e21e63044c2c541958"
+        },
+        {
+          "point": [
+            112964,
+            28772,
+            2248
+          ],
+          "type": "point",
+          "id": "284569c14cea6dde5a61bc9b48c4d011c6cdb175"
+        },
+        {
+          "point": [
+            111692,
+            32568,
+            2174
+          ],
+          "type": "point",
+          "id": "3f0558a018e4e41d2b65f729052c47f1e70d0021"
+        },
+        {
+          "point": [
+            107768,
+            41556,
+            1941
+          ],
+          "type": "point",
+          "id": "04882e27ec33cc7554f36ed0e4bd16842ad5e0df"
+        },
+        {
+          "point": [
+            108524,
+            31216,
+            4339
+          ],
+          "type": "point",
+          "id": "3c246b1e2ff90ba8612f13dc35dff1fed8278d9f"
+        },
+        {
+          "point": [
+            110596,
+            41660,
+            2095
+          ],
+          "type": "point",
+          "id": "114371f944f11391e2d44124ce2a531226b9edbd"
+        },
+        {
+          "point": [
+            116968,
+            43196,
+            1737
+          ],
+          "type": "point",
+          "id": "51b20e5f8657bfd4d0b97103d78ae809e77a3d7f"
+        },
+        {
+          "point": [
+            106788,
+            43156,
+            3569
+          ],
+          "type": "point",
+          "id": "8c6f98e51b5ed10357d0df0684c372a74806243a"
+        },
+        {
+          "point": [
+            109720,
+            31156,
+            4562
+          ],
+          "type": "point",
+          "id": "cdbfc18cb3fa230fec52022b3bb71c73bd04acdd"
+        },
+        {
+          "point": [
+            123712,
+            45724,
+            1999
+          ],
+          "type": "point",
+          "id": "5552b75b2bbd487579b47527508941eac028c5db"
+        },
+        {
+          "point": [
+            112164,
+            42940,
+            1702
+          ],
+          "type": "point",
+          "id": "fc135a3d9066a2b4a4b39a121c876103c8d448c7"
+        },
+        {
+          "point": [
+            123440,
+            45640,
+            1989
+          ],
+          "type": "point",
+          "id": "6f468f9784c96341610c7e067bebdab76b5e399a"
+        },
+        {
+          "point": [
+            107244,
+            30156,
+            4191
+          ],
+          "type": "point",
+          "id": "7f2f93dade95060c9eaaef764a1d0df5de9ef143"
+        },
+        {
+          "point": [
+            109052,
+            42168,
+            1832
+          ],
+          "type": "point",
+          "id": "78d93ff5d72e513998c8180d2e19e1827afb094a"
+        },
+        {
+          "point": [
+            110164,
+            42028,
+            1961
+          ],
+          "type": "point",
+          "id": "82f69eab10049fc542b04cf68970051ede9395e6"
+        },
+        {
+          "point": [
+            106916,
+            32904,
+            4367
+          ],
+          "type": "point",
+          "id": "de0de9dc1b11c417d6196b589e9ca838c12af30d"
+        },
+        {
+          "point": [
+            113432,
+            43260,
+            1812
+          ],
+          "type": "point",
+          "id": "eeeecd0ebc4b1f09d46ad016c3af6bd778c21a95"
+        },
+        {
+          "point": [
+            108504,
+            31432,
+            4343
+          ],
+          "type": "point",
+          "id": "365425a169e6f93f4dc6ce1381a8827153d5907f"
+        },
+        {
+          "point": [
+            112204,
+            23296,
+            2568
+          ],
+          "type": "point",
+          "id": "74e1fe7527f77b982c1bdfe4c14517641a09eb8f"
+        },
+        {
+          "point": [
+            113712,
+            43284,
+            1762
+          ],
+          "type": "point",
+          "id": "c613cbebe3f47ebd1db6273cfbe52778635a8c69"
+        },
+        {
+          "point": [
+            109324,
+            30852,
+            4562
+          ],
+          "type": "point",
+          "id": "ce77762d0a4451d4359ce18d55f8775457df9d44"
+        },
+        {
+          "point": [
+            118348,
+            43304,
+            1545
+          ],
+          "type": "point",
+          "id": "7c0249bbd99f3427972ad9e3060ed46571b24ed6"
+        },
+        {
+          "point": [
+            112772,
+            28564,
+            2163
+          ],
+          "type": "point",
+          "id": "5965791a4ea56728a1106bb83a1e555528e799b1"
+        },
+        {
+          "point": [
+            112400,
+            35244,
+            2143
+          ],
+          "type": "point",
+          "id": "a1a9b1662f102f62b2aaf6bea3361217cc8b236a"
+        },
+        {
+          "point": [
+            108152,
+            30620,
+            4478
+          ],
+          "type": "point",
+          "id": "4dc10383fefa14601a996618d45c7368ff0fad71"
+        },
+        {
+          "point": [
+            111244,
+            42580,
+            1613
+          ],
+          "type": "point",
+          "id": "d762ec0e207149ea1e4b15d1641e5f1f57bffa9f"
+        },
+        {
+          "point": [
+            108803,
+            31268,
+            4332
+          ],
+          "type": "point",
+          "id": "ce63eaea924ce91d775e39aaf4b5f97490044b12"
+        },
+        {
+          "point": [
+            113012,
+            28952,
+            2239
+          ],
+          "type": "point",
+          "id": "033aaec19ee9e9927483cb832c9508d10b41af3a"
+        },
+        {
+          "point": [
+            106388,
+            43052,
+            3713
+          ],
+          "type": "point",
+          "id": "22942b244ceeccab0a034e7f7d3e9a8a5992d913"
+        },
+        {
+          "point": [
+            111780,
+            22664,
+            2594
+          ],
+          "type": "point",
+          "id": "bbfce230336ab3390f3e16abc762b51f74a2d40a"
+        },
+        {
+          "point": [
+            106571,
+            33177,
+            4369
+          ],
+          "type": "point",
+          "id": "bf8e2c661aad3d329b72fc4ae7c2e14c5c72ac74"
+        },
+        {
+          "point": [
+            106796,
+            43216,
+            3236
+          ],
+          "type": "point",
+          "id": "de17e1e42831c782800ce56646e59289b92fff39"
+        },
+        {
+          "point": [
+            123140,
+            44668,
+            1969
+          ],
+          "type": "point",
+          "id": "8be3cea3b1321886420769053fee6d8830a3eb89"
+        },
+        {
+          "point": [
+            108376,
+            30656,
+            4447
+          ],
+          "type": "point",
+          "id": "626b3b03b3ef2ee56dc2255dc1e420371f32a1e3"
+        },
+        {
+          "point": [
+            108708,
+            41920,
+            4238
+          ],
+          "type": "point",
+          "id": "2a053f8977f9151d542c908a5f2c0a744a832fd8"
+        },
+        {
+          "point": [
+            108652,
+            41488,
+            4383
+          ],
+          "type": "point",
+          "id": "93b7ec22cbcda9cb025113c59ce66749265947fc"
+        },
+        {
+          "point": [
+            111564,
+            42956,
+            1600
+          ],
+          "type": "point",
+          "id": "6ea3eb1096867f8f833a5103a1af45b9706ce7a8"
+        },
+        {
+          "point": [
+            114692,
+            33616,
+            4721
+          ],
+          "type": "point",
+          "id": "6dffe52c46c2fd40dec40107f58815817b616ae3"
+        },
+        {
+          "point": [
+            110912,
+            42344,
+            1973
+          ],
+          "type": "point",
+          "id": "acfb1d361df747e1b3124e8b76825b25054c98b4"
+        },
+        {
+          "point": [
+            108500,
+            41516,
+            4330
+          ],
+          "type": "point",
+          "id": "ceee0d94b43817bb34053d10c69ffc70d99dc3cc"
+        },
+        {
+          "point": [
+            108684,
+            41584,
+            4289
+          ],
+          "type": "point",
+          "id": "49a188cbc1608238cdf5e19c7d1b17b434bbd698"
+        },
+        {
+          "point": [
+            107220,
+            44420,
+            2601
+          ],
+          "type": "point",
+          "id": "d8b5774910fc23ccbae574432ce3c59134c29382"
+        },
+        {
+          "point": [
+            111760,
+            42036,
+            2074
+          ],
+          "type": "point",
+          "id": "3667966270a0aabbdce1e096ff2a58e96e442d3d"
+        },
+        {
+          "point": [
+            108908,
+            41412,
+            4319
+          ],
+          "type": "point",
+          "id": "27509f77596d3069ac52b2eb781fff79e12947ae"
+        },
+        {
+          "point": [
+            124480,
+            45252,
+            1879
+          ],
+          "type": "point",
+          "id": "a06a12fd6d16a68bcbd360f039aae56d0b5b5507"
+        },
+        {
+          "point": [
+            108452,
+            41576,
+            4357
+          ],
+          "type": "point",
+          "id": "3569d590d81b84b935a65518888c4a88820cf1d7"
+        },
+        {
+          "point": [
+            106720,
+            44240,
+            2632
+          ],
+          "type": "point",
+          "id": "89a3c243cc1dac5101960b59b5cc9e803e2bf998"
+        },
+        {
+          "point": [
+            122396,
+            44936,
+            1888
+          ],
+          "type": "point",
+          "id": "58839886a0138fa565e686e1b5b9f3a510732ad0"
+        },
+        {
+          "point": [
+            108222,
+            30794,
+            4449
+          ],
+          "type": "point",
+          "id": "70baff2c0ec6ba42b70e1569718e019c0fde4b9e"
+        },
+        {
+          "point": [
+            110840,
+            43020,
+            1703
+          ],
+          "type": "point",
+          "id": "ce95a4070a0ff62938f27fad56570fdafb9ce38f"
+        },
+        {
+          "point": [
+            108636,
+            42340,
+            4152
+          ],
+          "type": "point",
+          "id": "91a8f6b8da4810304ae74c8c5f16f5f5f7630a66"
+        },
+        {
+          "point": [
+            107408,
+            30000,
+            4234
+          ],
+          "type": "point",
+          "id": "196cd56ed07e2370eaabfef29494b6f7484a7146"
+        },
+        {
+          "point": [
+            124532,
+            45284,
+            1881
+          ],
+          "type": "point",
+          "id": "3f54ff00fe2f20a47ef3d99b2e07d295adb413ff"
+        },
+        {
+          "point": [
+            123448,
+            44696,
+            1980
+          ],
+          "type": "point",
+          "id": "cd874bb09f2fa4cdc107913110d11fb21d40b65e"
+        },
+        {
+          "point": [
+            108776,
+            30448,
+            4606
+          ],
+          "type": "point",
+          "id": "037db3b754d182629a1018875f652bfb29aa6900"
+        },
+        {
+          "point": [
+            124556,
+            45112,
+            1865
+          ],
+          "type": "point",
+          "id": "85fe6a89903cf4dbac053979ce3a8d5caed22040"
+        },
+        {
+          "point": [
+            108100,
+            43348,
+            3923
+          ],
+          "type": "point",
+          "id": "7aece8ef26d4bd0f687228e2ab5ad756658c3046"
+        },
+        {
+          "point": [
+            121408,
+            43828,
+            1741
+          ],
+          "type": "point",
+          "id": "5e4ac01f36aab7184063c40d83fe647d705b18dc"
+        },
+        {
+          "point": [
+            108592,
+            30264,
+            4613
+          ],
+          "type": "point",
+          "id": "4a36d4943cbe362a6fbae95f15f0f47295bf6ddd"
+        },
+        {
+          "point": [
+            108264,
+            43040,
+            4015
+          ],
+          "type": "point",
+          "id": "dcbdfa6f986504e6b568362b72e16b142b64f233"
+        },
+        {
+          "point": [
+            109360,
+            40370,
+            4447
+          ],
+          "type": "point",
+          "id": "00c8a7f62063754228afd166023afa1a033cd566"
+        },
+        {
+          "point": [
+            108748,
+            30500,
+            4610
+          ],
+          "type": "point",
+          "id": "d019e6f2e7b0825a5c24055d85b2f036257de78e"
+        },
+        {
+          "point": [
+            110580,
+            43316,
+            1627
+          ],
+          "type": "point",
+          "id": "f8c07712aad12f6dbc45edc5503350a7ddc99482"
+        },
+        {
+          "point": [
+            115543,
+            43180,
+            1645
+          ],
+          "type": "point",
+          "id": "bc3558e3e92fc1d78207f881093b1ff7ae34cb49"
+        },
+        {
+          "point": [
+            112016,
+            30448,
+            2168
+          ],
+          "type": "point",
+          "id": "b4a557bebb00bac19cd00382540eaf5932df293b"
+        },
+        {
+          "point": [
+            113544,
+            43248,
+            1525
+          ],
+          "type": "point",
+          "id": "cb1c22a7446b54953aab09089fb76f602602779f"
+        },
+        {
+          "point": [
+            113832,
+            42992,
+            1575
+          ],
+          "type": "point",
+          "id": "0914a3af948372631d620e69844109d5ecf41696"
+        },
+        {
+          "point": [
+            111986,
+            30767,
+            2168
+          ],
+          "type": "point",
+          "id": "c37fd67659074334abf3603aa37b94f3a722eebe"
+        },
+        {
+          "point": [
+            123176,
+            44720,
+            1963
+          ],
+          "type": "point",
+          "id": "d064df51e82f26bc518fd81011a3959e62e857c9"
+        }
+      ],
+      "name": ". Connecting synapses 148"
+    }
+  ],
+  "showAxisLines": false,
+  "showDefaultAnnotations": false,
+  "showSlices": false,
+  "gpuMemoryLimit": 2000000000,
+  "systemMemoryLimit": 3000000000,
+  "projectionBackgroundColor": "#0f172a",
+  "layout": "3d"
+}
