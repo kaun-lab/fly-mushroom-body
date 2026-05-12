@@ -71,7 +71,16 @@
     a {
       color: #1a0dab;
     }
+.scroll-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
 
+.scroll-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
     #fly {
   position: fixed;
   width: 80px;
@@ -114,7 +123,7 @@ function showTab(tabId) {
   
   
   <img id="fly" src="fly_cartoon.png">
-<div id="overview" class="tabcontent">
+<div id="overview" class="tabcontent scroll-section">
   <h1>Fly Mushroom Body Atlas</h1>
   <p>Open-access resource for spatial transcriptomics and multi-omic analysis.</p>
 
@@ -143,7 +152,7 @@ function showTab(tabId) {
   </div>
   </div>
 
-<div id="brain" class="tabcontent" style="display:none;">
+<div id="brain" class="tabcontent scroll-section" style="display:none;">
   <h2>Drosophila Brain 3D Model</h2>
 
   <div class="sketchfab-embed-wrapper">
@@ -177,7 +186,7 @@ function showTab(tabId) {
 </canvas>
 </div>
   
-  <div id="umap" class="tabcontent" style="display:none;">
+  <div id="umap" class="tabcontent scroll-section" style="display:none;">
   <h2>3D UMAP Viewer</h2>
 
 
@@ -320,6 +329,20 @@ function animateSynapses() {
 
   synapseRenderer.render(synapseScene, synapseCamera);
 }
+</script>
+  <script>
+const sections = document.querySelectorAll(".scroll-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+
+    const position = section.getBoundingClientRect().top;
+
+    if (position < window.innerHeight - 100) {
+      section.classList.add("show");
+    }
+  });
+});
 </script>
 </body>
 </html>
