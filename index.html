@@ -208,7 +208,7 @@ function showTab(tabId) {
   <div id="md-content">Loading studies...</div>
 
   <script>
-    fetch("bulk_singlecell_studies.md")
+    fetch("MB_markers_study_details.md")
       .then(response => response.text())
       .then(md => {
         document.getElementById("md-content").innerHTML = marked.parse(md);
