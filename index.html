@@ -31,7 +31,7 @@
 }
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1400px;
       margin: 40px auto;
       line-height: 1.6;
       background-color: #f7f9fc;
@@ -59,13 +59,36 @@
       vertical-align: top;
     }
 
-    th {
+    #md-content {
+      overflow: auto;
+      max-height: 80vh;
+      border: 1px solid #ddd;
+      background: white;
+      font-size: 13px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    #md-content table {
+      border-collapse: collapse;
+      width: max-content;
+      min-width: 1400px;
+    }
+
+    #md-content th {
+      position: sticky;
+      top: 0;
       background-color: #eef2f7;
+      z-index: 10;
       text-align: left;
     }
 
-    tr:nth-child(even) {
+    #md-content tr:nth-child(even) {
       background-color: #fafafa;
+    }
+
+    #md-content tr:hover {
+      background-color: #eef4ff;
     }
 
     a {
