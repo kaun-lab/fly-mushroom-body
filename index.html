@@ -81,6 +81,11 @@
       background-color: #eef2f7;
       z-index: 10;
       text-align: left;
+      cursor: pointer;
+    }
+
+    #md-content th:hover {
+      background-color: #dde6f2;
     }
 
     #md-content tr:nth-child(even) {
@@ -238,7 +243,8 @@ function showTab(tabId) {
 
       document.querySelectorAll("#md-content th").forEach((th, index) => {
         th.style.cursor = "pointer";
-        th.title = "Click to sort";
+        th.innerHTML += " ↕";
+        th.title = "Click to sort";  
 
         th.addEventListener("click", () => {
           const table = th.closest("table");
